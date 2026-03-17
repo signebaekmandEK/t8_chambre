@@ -66,14 +66,30 @@ footer {
   background-color: #ffffff;
 }
 
+footer img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 left;
+  margin-left: 60px;
+  padding-top: 20px;
+}
+
 .grid-footer {
   margin: 20px 40px;
   padding: 20px;
 }
 
 .footer-info {
-  margin-top: 20px;
   padding: 10px;
+}
+
+#opening-hours {
+  gap: 10px;
+}
+.opening-hours {
+  display: flex;
+  gap: 10px;
 }
 
 footer h3 {
@@ -149,6 +165,15 @@ input[type="submit"] {
   border-radius: 8px;
 }
 
+.top-button {
+  background-color: #d04900;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 @media (min-width: 840px) {
   /* Header */
   .menu {
@@ -168,9 +193,9 @@ input[type="submit"] {
     color: black;
     text-decoration: none;
   }
-
-  .newsletter {
-    display: flex;
+  .grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   form {
