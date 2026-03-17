@@ -3,3 +3,218 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* =========================
+   RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   LOGO
+========================= */
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+/* =========================
+   NAVIGATION CONTAINER
+========================= */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+/* =========================
+   MENU (UL & LI)
+========================= */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+/* =========================
+   MENU LINKS
+========================= */
+.menu a,
+summary.menupunkt {
+  display: block;
+  padding: 10px;
+  transition: color 0.3s;
+  text-align: end;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* =========================
+   BURGER MENU
+========================= */
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+/* =========================
+   MENU HEADINGS (WORK / PROJECTS / ABOUT)
+========================= */
+.menupunkt {
+  all: unset; /* fjerner browser default */
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+summary.menupunkt {
+  display: inline-block;
+  list-style: none;
+}
+
+a.menupunkt {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* =========================
+   IMG / BILLEDE STYLING
+========================= */
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  border-bottom: 1px solid #ccc;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu li {
+  padding: 15px 40px;
+  border-right: 1px solid #ccc;
+}
+
+.menu li:first-child {
+  border-left: 1px solid #ccc;
+}
+
+/* =========================
+   RESPONSIVE / MOBILE
+========================= */
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+
+  /* Burger animation */
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  /* Mobile menu */
+  nav.active .menu {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .menu {
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .menu a:hover,
+  summary.menupunkt:hover {
+    color: #3a075e;
+  }
+}
