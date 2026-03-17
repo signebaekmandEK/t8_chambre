@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Masyte";
+  src: url(../fonts/MasyteRegular-lgmB0.ttf);
+}
+/* Header */
+header {
+  background-color: #ffffff;
+  position: sticky;
+}
+.menu {
+  display: none;
+}
+nav {
+  display: none;
+}
+
+#toggle-button {
+  display: none;
+}
+
+/* Generel setup - alle sider */
+body {
+  background-color: #ffeea4;
+}
+
+/* Text */
+h1 {
+  font-family: "Masyte", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: black;
+}
+
+h2 {
+  font-family: "Masyte", sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
+h3 {
+  font-family: "Avenir next", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: black;
+}
+
+h4 {
+  font-family: "Masyte", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+p {
+  font-family: "Avenir next", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+}
+
+footer p {
+  font-family: "Avenir next", sans-serif;
+  font-size: 10px;
+}
+
+@media (min-width: 840px) {
+  /* Header */
+  .menu {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
+    padding: 20px;
+    font-family: "Avenir next", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    list-style: none;
+  }
+
+  .menu li a {
+    color: black;
+    text-decoration: none;
+  }
+}
