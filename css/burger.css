@@ -19,20 +19,19 @@ header {
   position: sticky;
   top: 0;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #ffffff;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border: black solid 3px;
 }
 
 /* =========================
    LOGO
 ========================= */
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
 }
 
 /* =========================
@@ -73,6 +72,7 @@ summary.menupunkt {
   text-decoration: none;
   color: black;
   font-weight: 500;
+  border: black solid 3px;
 }
 
 /* =========================
@@ -122,39 +122,6 @@ img {
   width: 100%;
   height: auto;
   display: block;
-}
-
-/* =========================
-   TOPBAR
-========================= */
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  border-bottom: 1px solid #ccc;
-}
-
-/* =========================
-   NAVBAR
-========================= */
-.navbar {
-  border-bottom: 1px solid #ccc;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-.menu li {
-  padding: 15px 40px;
-  border-right: 1px solid #ccc;
-}
-
-.menu li:first-child {
-  border-left: 1px solid #ccc;
 }
 
 /* =========================
@@ -215,6 +182,6 @@ img {
 
   .menu a:hover,
   summary.menupunkt:hover {
-    color: #3a075e;
+    color: #cf4900;
   }
 }
