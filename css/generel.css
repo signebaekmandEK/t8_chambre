@@ -66,14 +66,30 @@ footer {
   background-color: #ffffff;
 }
 
+footer img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 left;
+  margin-left: 60px;
+  padding-top: 20px;
+}
+
 .grid-footer {
   margin: 20px 40px;
   padding: 20px;
 }
 
 .footer-info {
-  margin-top: 20px;
   padding: 10px;
+}
+
+#opening-hours {
+  gap: 10px;
+}
+.opening-hours {
+  display: flex;
+  gap: 10px;
 }
 
 footer h3 {
