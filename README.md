@@ -1,7 +1,5 @@
-# overskrift
+# PRODUCTS - CHAMBRE
 
 ## her bla bla
-
-Så vi skal skrive her
 
 ###
