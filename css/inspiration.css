@@ -1,0 +1,20 @@
+.grid1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-self: center;
+  column-gap: 30px;
+}
+
+.grid1_kasse1 {
+  background-color: #d04900;
+  width: 921px;
+  height: 905px;
+  border-radius: 80px;
+}
+
+.grid1_kasse2 {
+  background-color: #b1e3fc;
+  width: 525px;
+  height: 905px;
+  border-radius: 80px;
+}
