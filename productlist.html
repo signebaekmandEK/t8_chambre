@@ -67,30 +67,35 @@
     <main id="productContainer">
 
         <img src="billeder/stue4 1.webp" alt="Furniture" id="furniture">
-
+        <h2>Furniture</h2>
         <div class="intro-productlist">
+
             <div>
-                <h2>Furniture</h2>
-                <p>Mangler du inspiration til at sætte det hele sammen derhjemme, så tjek vores inspo side.</p>
+                <h3>Welcome to Our Collection</h3>
+                <p>Discover a curated selection of furniture, kitchen tools, and home décor designed to inspire and
+                    elevate your everyday
+                    life. Whether you’re furnishing your home, cooking up new culinary creations, or adding the perfect
+                    finishing touches,
+                    our products combine style, quality, and functionality. Explore our collections and find pieces that
+                    make your space
+                    truly yours.</p>
             </div>
             <div class="feature-gridbox">
-
                 <div class="filterbtn_productlist">
                     <div class="filter">
                         <h3>Filter</h3>
-                        <button id="filterWomenBtn" class="filter-btn">Color</button>
-                        <button id="filterWomenBtn" class="filter-btn">Material</button>
-                        <button id="filterWomenBtn" class="filter-btn">Price</button>
+                        <button id="filterDiscountBtn" class="filter-btn">Discounted items</button>
                     </div>
                     <div class="sortby">
                         <h3>Sort-by</h3>
-                        <button id="sortPriceBtnLh" class="filter-btn">Low - High</button>
-                        <button id="sortPriceBtnHl" class="filter-btn">High - Low</button>
+                        <button id="sortPriceBtnLh" class="filter-btn">Price: Low - High</button>
+                        <button id="sortPriceBtnHl" class="filter-btn">Price: High - Low</button>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="inspirationLink">
                 <a class="inspirationB" href="inspiration.html">Inspiration → </a>
+                <p>Need inspiration to put it all together at home? Check out our inspiration page.</p>
             </div>
         </div>
 
@@ -100,18 +105,21 @@
         </section>
 
         <div class="click-side">
-            <p>Viser 1 - 6 ud af 437 produkter</p>
-            <a class="productdetailsBsite" href="product.html?id=${product.id}">Se næste side</a>
-            <a class="productdetailsBsite123" href="product.html?id=${product.id}"> ❮ 1 2 3 ❯</a>
+            <p>Show 1 - 6 out of 437 products</p>
+            <a class="productdetailsBsite" href="productlist.html?category=home-decoration">Next page</a>
+            <a class="productdetailsBsite123" href="productlist.html?category=kitchen-accessories"> ❮ 1 2 3 ❯</a>
         </div>
     </main>
 
     <footer>
         <div class="grid-footer">
             <div class="newsletter">
-                <h3>Newsletter</h3>
-                <p>Here you will receive inspiration and news, when you sign up for our newsletter.</p>
-
+                <div class="news">
+                    <h3>Newsletter</h3>
+                    <p>Here you will receive inspiration and news, when you sign up for our newsletter.</p>
+                    <br>
+                    <p>We send you newsletter, campaigneoffers, productinfo and so on</p>
+                </div>
                 <form>
                     <input type="text" id="fname" name="fname" value="Full Name"><br>
                     <input type="text" id="email" name="email" value="E-mail"><br>
@@ -120,7 +128,7 @@
                     <label class="checkbox-container">
                         <input type="checkbox">
                         <span class="checkmark"></span>
-                        I accept terms and
+                        I accept terms and conditions.
                     </label>
 
                     <input type="submit" value="Sign-up">
@@ -167,7 +175,6 @@
                 <a href="#top" class="top-button">Top ↑</a>
             </div>
         </div>
-
     </footer>
 
     <script src="js/burger.js"></script>

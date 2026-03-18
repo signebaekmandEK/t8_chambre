@@ -69,6 +69,10 @@ a {
 }
 
 /* Footer */
+.newsletter {
+  display: block;
+}
+
 footer {
   background-color: #ffffff;
 }
@@ -83,14 +87,16 @@ footer img {
 }
 
 .grid-footer {
-  margin: 20px 40px;
+  margin: 0 40px;
   padding: 20px;
 }
 
 .footer-info {
   padding: 10px;
 }
-
+.newsletter {
+  margin-top: 20px;
+}
 #opening-hours {
   gap: 10px;
 }
@@ -189,7 +195,28 @@ input[type="submit"] {
   border-radius: 8px;
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 800px) {
+  .grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .newsletter {
+    display: flex;
+    justify-content: space-between; /* push news left, form right */
+    align-items: flex-start; /* align top edges */
+    gap: 20px;
+  }
+  .newsletter .news {
+    flex: 1;
+  }
+
+  .newsletter form {
+    flex: 1; /* take up remaining space on the right */
+    max-width: 300px;
+  }
+
   .footer-logo path {
     fill: black; /* startfarve */
     transition: fill 0.3s ease; /* blød overgang */
