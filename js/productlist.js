@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const category = params.get("category");
 
-const listURL = `https://dummyjson.com/products/category/${category}`;
+const listURL = category ? `https://dummyjson.com/products/category/${category}` : "https://dummyjson.com/products";
 
 const listContainer = document.querySelector(".productlist-container");
 document.querySelector("h2").textContent = category ? category : "Products";
@@ -20,7 +20,7 @@ function showProducts(products) {
   listContainer.innerHTML = "";
 
   products.forEach((product) => {
-    listContainer.innerHTML += `<article class="product-card">
+    listContainer.innerHTML += ` <article class="product-card">
                 <img src="${product.thumbnail}" alt="${product.title}">
                 <div class="product-indhold">
                     <h3>${product.brand}</h3>
@@ -29,8 +29,8 @@ function showProducts(products) {
                     <p class="color">...</p>
                 </div>
                 <br>
-                <a class="productdetailsB" href="product.html?id=${product.id}">Buy</a>
-            </article>`;
+                <a class="productdetailsB" href="productdetails.html?id=${product.id}">Buy</a>
+                  </article>`;
   });
 }
 

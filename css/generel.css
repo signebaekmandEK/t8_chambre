@@ -117,6 +117,23 @@ input {
   padding: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #d04900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 /* Checkboxx */
 .checkbox-container {
   display: flex;
