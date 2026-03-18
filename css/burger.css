@@ -27,6 +27,7 @@ header {
 .logo img {
   width: 150px;
   height: auto;
+  cursor: pointer;
 }
 
 /* =========================
@@ -180,5 +181,23 @@ img {
   .menu a:hover,
   summary.menupunkt:hover {
     color: #cf4900;
+  }
+
+  .logo svg path {
+    fill: black; /* startfarve */
+    transition: fill 0.3s ease; /* blød overgang */
+  }
+
+  .logo:hover svg path {
+    fill: #cf4900; /* farve ved hover */
+  }
+
+  .footer-logo path {
+    fill: black; /* startfarve */
+    transition: fill 0.3s ease; /* blød overgang */
+  }
+
+  .footer-logo:hover svg path {
+    fill: #cf4900; /* farve ved hover */
   }
 }

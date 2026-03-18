@@ -53,6 +53,7 @@ PRODUKT KORT VENSTRE SIDE
 .thumbnails {
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 
 /* =======================
@@ -90,6 +91,7 @@ PRODUKT KORT HØJRE SIDE
   height: 30px;
   margin: 20px;
   font-weight: 550;
+  cursor: pointer;
 }
 
 .pris {
@@ -103,5 +105,12 @@ PRODUKT KORT HØJRE SIDE
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+
+  .cta_cart:hover,
+  .cta_wishlist:hover {
+    background-color: #d04900;
+    color: #ffffff;
+    border: 1px solid #d04900;
   }
 }

@@ -13,7 +13,7 @@ function getData() {
 
 function show(data) {
   console.log(data);
-  productcontainer.innerHTML = ` <article class="produkt-kort">
+  productcontainer.innerHTML = `
             <div class="venstre-side">
                 <h2 class="furniture">Furniture</h2>
                 <p>Hjem / Produkter / Furniture / Bruno BookCase</p>
@@ -37,8 +37,6 @@ function show(data) {
                 <button class="cta_wishlist">Add to wishlist</button>
                 <button class="cta_cart">Add to cart</button>
             </div>
-
-        </article>
  `;
 }
 
