@@ -171,3 +171,14 @@ input[type="submit"] {
   border: none;
   border-radius: 8px;
 }
+
+@media screen and (min-width: 801px) {
+  .footer-logo path {
+    fill: black; /* startfarve */
+    transition: fill 0.3s ease; /* blød overgang */
+  }
+
+  .footer-logo:hover svg path {
+    fill: #cf4900; /* farve ved hover */
+  }
+}
