@@ -1,20 +1,52 @@
+.overskrift {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
 .grid1 {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   align-self: center;
-  column-gap: 30px;
+  gap: 4rem;
+  margin: 2rem 4rem;
 }
 
 .grid1_kasse1 {
   background-color: #d04900;
-  width: 921px;
-  height: 905px;
   border-radius: 80px;
+}
+
+.grid1_kasse1 h2,
+.grid1_kasse1 p {
+  color: white;
 }
 
 .grid1_kasse2 {
   background-color: #b1e3fc;
-  width: 525px;
-  height: 905px;
-  border-radius: 80px;
+  border-radius: 70px;
+}
+
+.grid1_kasse2 img,
+.grid1_kasse1 img {
+  width: 100%;
+  height: auto;
+}
+
+.grid1_kasse2 img {
+  border-radius: 70px 70px 0 0;
+}
+
+.grid1_kasse1 img {
+  border-radius: 80px 80px 0 0;
+}
+
+.kasse_text {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+
+.grid1_kasse2 p,
+.grid1_kasse1 p {
+  margin-top: -15px;
 }
