@@ -1,3 +1,16 @@
+header {
+  background-color: #ffffff;
+  position: sticky;
+}
+.menu {
+  display: none;
+}
+nav {
+  display: none;
+}
+
+#toggle-button {
+  display: none;
 /*************** Reset *********************/
 * {
   margin: 0;
