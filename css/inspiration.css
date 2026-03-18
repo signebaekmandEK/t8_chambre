@@ -1,7 +1,7 @@
 .overskrift {
   padding-top: 20px;
   padding-bottom: 40px;
-  padding-left: 40px;
+  padding-left: 70px;
 }
 .grid1 {
   display: grid;
@@ -49,4 +49,19 @@
 .grid1_kasse2 p,
 .grid1_kasse1 p {
   margin-top: -15px;
+}
+
+.grid2 {
+  margin: 2rem 4rem;
+}
+
+.grid2_kasse {
+  background-color: #b1e3fc;
+  border-radius: 80px;
+}
+
+.grid2_kasse img {
+  width: 100%;
+  height: auto;
+  border-radius: 80px 80px 0 0;
 }
