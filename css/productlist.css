@@ -1,7 +1,140 @@
+main#productContainer img#furniture {
+  width: cover;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* furniture kolonne */
+.intro-productlist {
+  display: block;
+  background-color: #d04900;
+  margin: 20px 0;
+  padding: 10px;
+}
+/* filter og sorting */
+.filterbtn_productlist {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #ffffff;
+  border: black 1px solid;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.filterbtn_productlist button {
+  display: block;
+  background-color: #ffffff;
+  border: black 1px solid;
+  padding: 4px;
+  margin: 10px;
+}
+
+.inspirationB {
+  background-color: #ffffff;
+  border: black 1px solid;
+  padding: 10px;
+}
+/* produkter */
+.productlist-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #b1e3fc;
+  margin: 0;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-color: black solid 2px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.product-indhold {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+.product-card h3 {
+  font-family: "Avenir next", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.productdetailsB {
+  align-self: flex-end;
+  background-color: #d04900;
+  border-radius: 10px;
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+.productdetailsB a {
+  font-family: "Avenir next", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.productdetailsB:hover {
+  background-color: #ffffff;
+  border: black 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* næste side knapper i bunden */
+.click-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.productdetailsBsite,
+.productdetailsBsite123 {
+  margin: 0 10px;
+  border: black 1px solid;
+  padding: 10px;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
 @media (min-width: 840px) {
+  .intro-productlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; /* tilføj rækker */
+    gap: 20px;
+  }
+
+  .intro-productlist > div:nth-child(3) {
+    grid-column: 1; /* placerer knappen under første div */
+    grid-row: 2; /* på næste række */
+    justify-self: start; /* valgfrit, justerer knappen til venstre */
+  }
+
+  /* filter og sorting */
   .feature-gridbox {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+  .filterbtn_productlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* produkter */
+  .productlist-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #b1e3fc;
+    margin: 0;
   }
 }
