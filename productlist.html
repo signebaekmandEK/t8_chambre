@@ -7,6 +7,8 @@
     <title>Product List</title>
     <link rel="stylesheet" href="https://use.typekit.net/mhr3fgo.css">
     <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="css/productlist.css">
 
 </head>
 
@@ -14,7 +16,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="xx" alt="Logo">
+                <img src="SVG/logochambre.svg" alt="Logo">
             </a>
         </div>
         <nav>
@@ -32,27 +34,91 @@
         </nav>
     </header>
 
-    <main>
+    <main id="productContainer">
 
-        <img src="x" alt="Furniture">
+        <img src="billeder/stue4 1.webp" alt="Furniture" id="furniture">
 
         <div class="intro-productlist">
-            <h2>Furniture</h2>
-
+            <div>
+                <h2>Furniture</h2>
+                <p>Mangler du inspiration til at sætte det hele sammen derhjemme, så tjek vores inspo side.</p>
+            </div>
             <div class="feature-gridbox">
-                <div class="filter-sort">
-                    <h4>Filter</h4>
-                    <p>Color</p>
-                    <p>Price</p>
-                </div>
-                <br>
-                <div class="sort-by">
-                    <h4>Sort-by</h4>
-                    <p>A-Z</p>
-                    <p>Low-high</p>
-                    <p>High-Low</p>
+
+                <div class="filterbtn_productlist">
+                    <div class="filter">
+                        <h3>Filter</h3>
+                        <button id="filterWomenBtn" class="filter-btn">Color</button>
+                        <button id="filterWomenBtn" class="filter-btn">Material</button>
+                        <button id="filterWomenBtn" class="filter-btn">Price</button>
+                    </div>
+                    <div class="sortby">
+                        <h3>Sort-by</h3>
+                        <button id="sortPriceBtnLh" class="filter-btn">Low - High</button>
+                        <button id="sortPriceBtnHl" class="filter-btn">High - Low</button>
+                    </div>
                 </div>
             </div>
+            <div>
+                <a class="inspirationB" href="inspiration.html">Inspiration → </a>
+            </div>
+        </div>
+
+        <section class="productlist-container">
+            <article class="product-card">
+                <img src="billeder/natbord1 1.webp" alt="produktbillede1">
+                <div class="product-indhold">
+                    <h3>Product displayname</h3>
+                    <p class="price">Price DKK</p>
+                    <p class="size">Size</p>
+                    <p class="color">Color</p>
+                </div>
+                <br>
+                <a class="productdetailsB" href="product.html?id=${product.id}">Buy</a>
+            </article>
+
+            <article class="product-card">
+                <img src="billeder/natbord1 1.webp" alt="produktbillede1">
+                <div class="product-indhold">
+                    <h3>Product displayname</h3>
+                    <p class="price">Price DKK</p>
+                    <p class="size">Size</p>
+                    <p class="color">Color</p>
+                </div>
+                <br>
+                <a class="productdetailsB" href="product.html?id=${product.id}">Buy</a>
+
+            </article>
+            <article class="product-card">
+                <img src="billeder/natbord1 1.webp" alt="produktbillede1">
+                <div class="product-indhold">
+                    <h3>Product displayname</h3>
+                    <p class="price">Price DKK</p>
+                    <p class="size">Size</p>
+                    <p class="color">Color</p>
+                </div>
+                <br>
+                <a class="productdetailsB" href="product.html?id=${product.id}">Buy</a>
+
+            </article>
+            <article class="product-card">
+                <img src="billeder/natbord1 1.webp" alt="produktbillede1">
+                <div class="product-indhold">
+                    <h3>Product displayname</h3>
+                    <p class="price">Price DKK</p>
+                    <p class="size">Size</p>
+                    <p class="color">Color</p>
+                </div>
+                <br>
+                <a class="productdetailsB" href="product.html?id=${product.id}">Buy</a>
+
+            </article>
+        </section>
+
+        <div class="click-side">
+            <p>Viser 1 - 6 ud af 437 produkter</p>
+            <a class="productdetailsBsite" href="product.html?id=${product.id}">Se næste side</a>
+            <a class="productdetailsBsite123" href="product.html?id=${product.id}"> ❮ 1 2 3 ❯</a>
         </div>
     </main>
 
@@ -61,6 +127,7 @@
     </footer>
 
     <script src="js/burger.js"></script>
+    <script src="js/productlist.js"></script>
 
 </body>
 
