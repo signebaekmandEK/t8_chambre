@@ -100,7 +100,7 @@ PRODUKT KORT HØJRE SIDE
   margin: 20px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 840px) {
   .produkt-kort {
     display: grid;
     grid-template-columns: 1fr 1fr;
