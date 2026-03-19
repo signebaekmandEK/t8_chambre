@@ -7,24 +7,24 @@
     <title>Chambre</title>
     <link rel="stylesheet" href="https://use.typekit.net/mhr3fgo.css">
     <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="css/index.css">
+
 
 </head>
 
 <body>
     <header>
-        <div id="logo">
-            <a href="css/index.css">
-                <img src="" alt="">
+        <div class="logo">
+            <a href="index.html">
+                <img src="SVG/logochambre.svg" alt="Logo">
             </a>
         </div>
-
         <nav>
             <ul class="menu">
-                <li><button id="toggle-btn" class="toggle"></button></li>
-                <li><a href="productlist.html">Products</a></li>
-                <li><a href="inspiration.html">Inspiration</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-                <li><a href="index.html">Account</a></li>
+                <li><a href="productlist.html">PRODUCTS</a></li>
+                <li><a href="inspiration.html">INSPIRATION</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
             </ul>
 
             <button class="burger">
@@ -33,52 +33,116 @@
                 <span class="line"></span>
             </button>
         </nav>
-
     </header>
 
     <main>
-        <h1>Chambre</h1>
+        <div class="heroimage">
+            <img src="billeder/heroimage.webp" alt="herobillede">
+        </div>
+
+        <h2>Where to start</h2>
+
+
+        <article class="genvej.cards">
+            <div class="genvejCard">
+                <img src="billeder/stolforside.webp" alt="homedeco">
+                <a href="productlist.html"> Furniture</a>
+            </div>
+
+            <div class="genvejCard">
+                <img src="billeder/lampeforside.webp" alt="homedeco">
+                <a href="productlist.html"> Home decoration</a>
+            </div>
+
+            <div class="genvejCard">
+                <img src="billeder/homedecorigtigpng.webp" alt="homedeco">
+                <a href="productlist.html">Kitchen accesories</a>
+            </div>
+        </article>
+
+
+        <section class="backgroundBobler">
+            <img src="SVG/boblermange.svg" alt="boblermange">
+
+            <article class="infoCard">
+                <h2>Where to find inspiration for your new home!</h2>
+                <p>If you are looking for inspiration for your interior design with our furniture or rethinking it with
+                    DIY
+                    or
+                    other Hacks, then explore our Inspiration site.</p>
+
+                <a href="inspiration.html" class="cta">
+                    <span>Inspiration</span>
+                    <img src="svg/pil_hen 2.svg" alt="pil">
+                </a>
+            </article>
+        </section>
+
+
     </main>
 
     <footer>
-        <div class="grid-footer">
+        <img src="SVG/logochambre.svg" alt="logochambre">
 
+        <div class="grid-footer">
             <div class="newsletter">
                 <h3>Newsletter</h3>
-                <p>Here you can sign-up</p>
+                <p>Here you will receive inspiration and news, when you sign up for our newsletter.</p>
+
+                <form>
+                    <input type="text" id="fname" name="fname" value="Full Name"><br>
+                    <input type="text" id="email" name="email" value="E-mail"><br>
+
+
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        I accept terms and
+                    </label>
+
+                    <input type="submit" value="Sign-up">
+                </form>
             </div>
 
-            <button class="Sign-up">Sign-up</button>
+            <div class="footer-info">
+                <h3>Opening hours</h3>
+                <div class="opening-hours">
+                    <div class="days">
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p>
+                        <p>Thursday</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                        <p>Sunday</p>
+                    </div>
+                    <div class="times">
+                        <p>10–18</p>
+                        <p>10–18</p>
+                        <p>10–18</p>
+                        <p>10–18</p>
+                        <p>10–18</p>
+                        <p>10–18</p>
+                        <p>10–18</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="Costumer-service">
+            <div class="footer-info">
                 <h3>Costumer service</h3>
                 <p>Contact</p>
                 <p>Sign-up</p>
                 <p>Newsletter</p>
                 <p>Work at Chambre</p>
-            </div>
-
-            <div class="Opening-hours">
-                <h3>Opening hours</h3>
-                <p>Mon - 10–18</p>
-                <p>Tue - 10–18</p>
-                <p>Wed - 10–18</p>
-                <p>Thu - 10–18</p>
-                <p>Fri - 10–18</p>
-                <p>Sat - 10–18</p>
-                <p>Sun - 10–18</p>
-            </div>
-
-            <div class="About-us">
+                <br>
                 <h3>About us</h3>
                 <p>Facebook</p>
                 <p>Instagram</p>
                 <p>Inspiration</p>
                 <p>Who are we</p>
+                <br>
+                <button href="" class="top-button">Top</button>
             </div>
-
-            <button class="top">top</button>
-
         </div>
     </footer>
 
