@@ -133,8 +133,8 @@ main#productContainer img#furniture {
   text-decoration: none;
   background-color: #b1e3fc;
   background-image: url(../SVG/boblergul.svg);
-  background-repeat: no-repeat; /* undgå gentagelse */
-  background-position: center; /* centrer billedet */
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
