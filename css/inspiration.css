@@ -108,3 +108,39 @@
 .grid3_kasse2 img {
   border-radius: 70px 70px 0 0;
 }
+
+/*Grid4*/
+
+.grid4 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-self: center;
+  gap: 4rem;
+  margin: 4rem 2rem;
+}
+
+.grid4_kasse1,
+.grid4_kasse2 img {
+  width: 100%;
+  height: auto;
+}
+
+.grid4_kasse1 {
+  background-color: #b1e3fc;
+  border-radius: 80px;
+}
+
+.grid4_kasse1 img {
+  border-radius: 80px 80px 0 0;
+}
+
+.grid4_kasse2 {
+  background-color: #ffffff;
+  border-radius: 70px;
+}
+
+.lampe_text {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
