@@ -59,7 +59,11 @@ sortPriceBtnHl.addEventListener("click", sortByPriceDesc);
 
 // filter
 discountBtn.addEventListener("click", () => {
-  discountActive = !discountActive;
+  if (discountActive) {
+    discountActive = false;
+  } else {
+    discountActive = true;
+  }
   discountBtn.classList.toggle("active");
 
   let filteredProducts = allProducts;
@@ -69,5 +73,4 @@ discountBtn.addEventListener("click", () => {
 
   showProducts(filteredProducts);
 });
-
 getProducts();

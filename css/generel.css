@@ -204,8 +204,8 @@ input[type="submit"] {
 
   .newsletter {
     display: flex;
-    justify-content: space-between; /* push news left, form right */
-    align-items: flex-start; /* align top edges */
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 20px;
   }
   .newsletter .news {
@@ -213,16 +213,16 @@ input[type="submit"] {
   }
 
   .newsletter form {
-    flex: 1; /* take up remaining space on the right */
+    flex: 1;
     max-width: 300px;
   }
 
   .footer-logo path {
-    fill: black; /* startfarve */
-    transition: fill 0.3s ease; /* blød overgang */
+    fill: black;
+    transition: fill 0.3s ease;
   }
 
   .footer-logo:hover svg path {
-    fill: #cf4900; /* farve ved hover */
+    fill: #cf4900;
   }
 }
