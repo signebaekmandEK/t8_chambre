@@ -1,7 +1,196 @@
+#productContainer {
+  background-color: #d04900;
+}
+
+#productContainer h2 {
+  padding: 20px;
+}
+
+main#productContainer img#furniture {
+  width: cover;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* furniture kolonne */
+.intro-productlist {
+  display: block;
+  background-color: #d04900;
+  padding: 20px 40px;
+}
+
+/* filter og sorting */
+.filterbtn_productlist {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #ffffff;
+  border: black 1px solid;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.filterbtn_productlist button {
+  display: block;
+  border: none;
+  border-bottom: #ffffff 1px solid;
+  background-color: #ffffff;
+  padding: 8px;
+  margin: 10px;
+}
+.filterbtn_productlist button:hover {
+  font-weight: 700;
+  border-bottom: black 1px solid;
+}
+
+.filter-btn.active {
+  background-color: #cf4900;
+  color: white;
+}
+
+.inspirationLink {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+}
+.inspirationB {
+  background-color: #ffffff;
+  border: black 1px solid;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+.inspirationB:hover {
+  font-weight: 700;
+  border: black 1px solid;
+  text-decoration: underline;
+  background-color: #d04900;
+}
+/* produkter */
+.productlist-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #b1e3fc;
+  margin: 0;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-color: black solid 2px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.product-indhold {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+.product-card h3 {
+  font-family: "Avenir next", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.productdetailsB {
+  align-self: flex-end;
+  background-color: #d04900;
+  border: rgb(255, 255, 255) 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+.productdetailsB a {
+  font-family: "Avenir next", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.productdetailsB:hover {
+  background-color: #ffffff;
+  border: black 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* næste side knapper i bunden */
+.click-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #b1e3fc;
+  background-image: url(../SVG/boblergul.svg);
+  background-repeat: no-repeat; /* undgå gentagelse */
+  background-position: center; /* centrer billedet */
+  background-size: cover;
+}
+
+.productdetailsBsite,
+.productdetailsBsite123 {
+  margin: 0 10px;
+  border: black 1px solid;
+  padding: 10px;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+.productdetailsBsite,
+.productdetailsBsite123:hover {
+  font-weight: 700;
+}
+
 @media (min-width: 840px) {
+  .intro-productlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+
+  .intro-productlist > div:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
+  }
+
+  /* filter og sorting */
   .feature-gridbox {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .filterbtn_productlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    columns: span 2;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  .feature-gridbox .filterbtn_productlist {
+    grid-column: span 2;
+  }
+  /* produkter */
+  .productlist-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #b1e3fc;
+    margin: 0;
   }
 }

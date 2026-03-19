@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* =======================
+PRODUKT KORT OVERORDNET
+======================= */
+
+.furniture {
+  font-size: 40px;
+}
+h2 {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* =======================
+PRODUKT KORT VENSTRE SIDE
+======================= */
+.produkt-kort {
+  background-color: #b1e3fc;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 45px;
+  border-radius: 10px;
+}
+
+.venstre-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.produkt-billede {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.thumbnail {
+  width: 80px;
+  margin-right: 10px;
+}
+
+/* thumbnails på en række */
+.venstre-side img.thumbnail {
+  display: inline-block;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* =======================
+PRODUKT KORT HØJRE SIDE
+======================= */
+
+.højre-side {
+  margin-top: 70px;
+}
+
+.cta_wishlist {
+  background-color: #ffffff;
+  margin: 15px;
+  color: #000000;
+  font-weight: 550;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.cta_cart {
+  background-color: #ffffff;
+  margin: 15px;
+  color: #000000;
+  font-weight: 550;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.farvevalg {
+  width: auto;
+  height: 30px;
+  margin: 20px;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.pris {
+  color: #000000;
+  font-weight: 600;
+  margin: 20px;
+}
+
+@media (min-width: 840px) {
+  .produkt-kort {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .cta_cart:hover,
+  .cta_wishlist:hover {
+    background-color: #d04900;
+    color: #ffffff;
+    border: 1px solid #d04900;
+  }
+}
