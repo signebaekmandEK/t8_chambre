@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search);
-// const id = params.get("id");
-const id = 11;
+const id = params.get("id");
+// const id = 11;
 
 const productURL = "https://dummyjson.com/products/" + id;
 const productcontainer = document.querySelector(".produkt-kort");
