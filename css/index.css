@@ -13,10 +13,22 @@ img {
 
 /***************billede*******************/
 
-.herobillede {
-  width: 80%;
-  height: 80%;
+.heroimage img {
+  width: 200%;
+  height: 120%;
   padding: 50px;
+  place-self: center;
+  margin-top: 0;
+}
+
+@media (min-width: 840px) {
+  .heroimage img {
+    width: 100%;
+    height: 80%;
+    padding: 50px;
+    place-self: center;
+    margin-top: 0;
+  }
 }
 
 /**************font***************/
@@ -26,56 +38,143 @@ h2 {
   margin-top: 30px;
 }
 
+/******************* animation linje ****************/
+@keyframes site-progress {
+  from {
+    scale: 0 1;
+  }
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  block-size: 6px;
+  background-color: #d04900;
+  z-index: 1;
+  animation: site-progress linear;
+  transform-origin: 0;
+  animation-timeline: scroll();
+}
+
 /**************cards************/
+.genvejcards {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile first */
+  gap: 30px;
+  padding: 50px;
+}
 
 .genvejCard {
   background-color: #b1e3fc;
-  width: 300px;
   border-radius: 30px;
-  place-self: center;
-  margin-top: 30px;
   padding: 30px;
-  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* gør dem ens */
+  height: 100%; /* vigtig! */
 }
+
 .genvejCard img {
-  height: 60%;
-  width: 60%;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* eller 1 / 1 hvis du vil have kvadratiske */
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .genvejCard a {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Avenir next", sans-serif;
   color: black;
   font-weight: 800;
+  margin-top: 15px;
+  display: block;
+}
+
+.genvejCard {
+  transition: transform 0.3s ease;
+}
+
+.genvejCard:hover {
+  transform: translateY(-20px);
 }
 
 /************foside info cards***********/
 
-.infoCard {
-  background-color: #ffff;
-  border: black;
-  border-style: solid;
-  padding: 80px;
-  margin-bottom: 30px;
-}
-
+/* BACKGROUND SECTION */
 .backgroundBobler {
-  position: relative;
-  width: 100%;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centrer kortet */
+  background-image: url("SVG/boblermange.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  min-height: 400px; /* plads til kortet på mobil */
 }
 
-.backgroundBobler img {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-
+/* INFO CARD */
 .infoCard {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* lodret på mobil */
+  align-items: center;
+}
+
+.infoCard img {
+  display: none;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* DESKTOP >840px */
+@media (min-width: 840px) {
+  .backgroundBobler {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    min-height: 500px;
+  }
+
+  .infoCard {
+    flex-direction: row; /* tekst venstre, billede højre */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 20px;
+    padding: 80px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .infoCard .text-content {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .infoCard img {
+    display: block;
+    flex: 1;
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 0;
+  }
+  .genvejcards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /******************cta****************/
@@ -93,6 +192,10 @@ h2 {
   margin-left: 35px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.cta:hover {
+  background-color: #b1e3fc;
 }
 
 .cta img {
