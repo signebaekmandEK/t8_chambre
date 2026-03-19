@@ -14,7 +14,23 @@ På vores webside kan brugeren:
 
 ## Projektstruktur
 
-```
+project/
+├── index.html
+├── productlist.html
+├── productlistdetails.html
+├── inspiration.html
+├── css/
+│   └── generel.css
+    └── index.css
+    └── burger.css
+    └── productlist.css
+    └── productlistdetails.css
+├── js/
+│   ├── index.js
+│   ├── productlist.js
+│   ├── productlistdetails.js
+│   └── burger.js
+└── README.md
 
 
 ## Om projektet
