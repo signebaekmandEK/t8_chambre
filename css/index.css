@@ -1,4 +1,3 @@
-<<<<<<<<< Temporary merge branch 1
 /*************** Reset *********************/
 * {
   margin: 0;
@@ -99,7 +98,7 @@ h2 {
 .cta img {
   width: 14px;
   height: auto;
-=========
+}
 header {
   background-color: #ffffff;
   position: sticky;
@@ -113,5 +112,4 @@ nav {
 
 #toggle-button {
   display: none;
->>>>>>>>> Temporary merge branch 2
 }
