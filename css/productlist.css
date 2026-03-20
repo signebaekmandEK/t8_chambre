@@ -64,9 +64,10 @@ main#productContainer img#furniture {
 }
 .inspirationB:hover {
   font-weight: 700;
-  border: black 1px solid;
+  border: rgb(255, 255, 255) 1px solid;
   text-decoration: underline;
-  background-color: #d04900;
+  background-color: #b1e3fc;
+  color: #000000;
 }
 /* produkter */
 .productlist-container {
