@@ -32,7 +32,7 @@ function showProducts(products) {
     listContainer.innerHTML += ` <article class="product-card">
                 <img src="${product.thumbnail}" alt="${product.title}">
                 <div class="product-indhold">
-                    <h3>${product.brand}</h3>
+                    <h3>${product.brand ?? product.title}</h3>
                     <p class="price">Price: ${product.price} DKK</p>
                     <p class="color">Color:</p>
                     <img class="farvevalg" src="SVG/farvevalg.svg" alt="Eksisterende farver du kan vælge imellem til din Bruno BookCase">
